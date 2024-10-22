@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.cartaz{
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;/*Largura do card*/
+    margin: 0 auto;/*Margem a esquerda com valor 0 e */
+}
+
+header {
+    text-align: center;/*Alinhamento do texto*/
+    padding: 20px; /*Distanciamento da borda*/
+    background: #007bff;/* Cor de fundo */
+    color: white;
+}
+
+.scrollable-content {
+    display: flex; /* Usando flexbox para alinhar os cards horizontalmente */
+    overflow-x: auto; /* Permite rolagem horizontal */
+    max-width: 100%; /* Define a largura máxima do container */
+    padding: 15px;
+    background: #efe9da;
+    border: 0.5px solid #ccc;
+    
+}
+
+.card {
+    background: #e9ecef;
+    margin-right: 10px; /* Espaço entre os cards */
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 200px; /* Define uma largura mínima para os cards */
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    margin: 0;/*Margem */
+}
