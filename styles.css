@@ -4,6 +4,26 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+header{
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 0px;
+    
+}
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px; 
+}
+nav a {
+    
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
 .cartas{
     max-width: 100%;
 }
@@ -16,7 +36,7 @@ body {
 header {
     text-align: center;/*Alinhamento do texto*/
     padding: 20px; /*Distanciamento da borda*/
-    background: #007bff;/* Cor de fundo */
+    background: #464136;/* Cor de fundo */
     color: white;
 }
 
