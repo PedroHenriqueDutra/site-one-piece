@@ -6,11 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 header{
-    position: relative;
+    position: inline ;
     height: 1em;
     margin: 10px auto;/*Afasta o header docontainer de cartazes*/ 
     text-align: center;/*Alinhamento do texto*/
     padding: 20px; /*Distanciamento da borda*/
+    left: 10em;
     background: #464136;/* Cor de fundo */
     color: white;
 }
@@ -33,19 +34,21 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
-
+/*configuração da página index*/
+.bandoCompleto{
+    display: relative;
+    left: 50em;
+}
 /* configuração da página personagens*/
+
 .cartas{
     max-width: 100%;
     padding-bottom: 20px;
 }
-
 .container {
     width: 80%;/*Largura do card*/
     margin: 0 auto;/*Margem a esquerda com valor 0 e */
 }
-
-
 .scrollable-content {
     display: flex; /* Usando flexbox para alinhar os cards horizontalmente */
     overflow-x: auto; /* Permite rolagem horizontal */
@@ -55,7 +58,6 @@ nav a {
     border: 0.5px solid #ccc;
     
 }
-
 .card {
     background: #e9ecef;
     margin-right: 10px; /* Espaço entre os cards */
@@ -63,11 +65,9 @@ nav a {
     border-radius: 5px;
     min-width: 200px; /* Define uma largura mínima para os cards */
 }
-
 .card h2 {
     margin: 0 0 10px 0;
 }
-
 .card p {
     margin: 0;/*Margem */
 }
