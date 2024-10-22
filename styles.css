@@ -14,7 +14,9 @@ header{
     left: 10em;
     background: #464136;/* Cor de fundo */
     color: white;
+    
 }
+
 
 nav{
     position: absolute;
@@ -35,10 +37,19 @@ nav a {
     text-decoration: none;
 }
 /*configuração da página index*/
-.bandoCompleto{
-    display: relative;
-    left: 50em;
+#imagemBando{
+    
+    text-align: center;
+    position: relative;
+    left: 2em;
 }
+#mapaMares{
+    max-width: 40em;
+    position: relative;
+    
+}
+/*Rodape*/
+
 /* configuração da página personagens*/
 
 .cartas{
