@@ -46,10 +46,16 @@ nav a {
 /*Rodape*/
 
 /* configuração da página personagens*/
-
+.sonhos{
+    display: none;
+}
 .cartas{
     max-width: 100%;
     padding-bottom: 20px;
+    
+}
+.cartas:hover{
+    transform: scale(1.1); /*Aumenta a escala da foto 1.1x*/
 }
 .container {
     width: 80%;/*Largura do card*/
@@ -57,11 +63,16 @@ nav a {
 }
 .scrollable-content {
     display: flex; /* Usando flexbox para alinhar os cards horizontalmente */
-    overflow-x: auto; /* Permite rolagem horizontal */
+    overflow-x: scroll; /* Permite rolagem horizontal */
     max-width: 100%; /* Define a largura máxima do container */
     padding: 15px;
     background: #efe9da;
     border: 0.5px solid #ccc;
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 60%;
+    gap: 1px;/* afeasta as imagens*/
+    background-color: #000000;
     
 }
 .card {
@@ -71,11 +82,9 @@ nav a {
     border-radius: 5px;
     min-width: 200px; /* Define uma largura mínima para os cards */
 }
-.card h2 {
-    margin: 0 0 10px 0;
-}
-.card p {
-    margin: 0;/*Margem */
+
+img:hover .sonhos{
+    display: flex;
 }
 /*Sobre o autor*/
 #autor{
@@ -85,13 +94,14 @@ nav a {
 }
 /*Timeline*/
 .linha_t{
-    border-left: 6px solid black;
+    border-left: 6px solid rgb(14, 13, 13);
     height: 5000px;
     display: flex;
     position: relative;
     left: 50%;
     max-width: 1px;
     background-color: green;
+    top: 200px;
 }
 .momentos{
     background-color: purple;
@@ -99,9 +109,14 @@ nav a {
     display: flex;
     min-width: 10px;
     min-height: 10px;
-    position: absolute;/*Faz desconsiderar outros espaços*/
-    top: 0px;
-    left: 27.8em;
+    position: absolute;/*Faz desconsiderar outros espaços de itens*/
+    left: 49em;
     border-radius: 50%;/*torna a borda circular*/
     max-width: 3%;
+}
+#momentos1{
+    top: 200px;
+}
+#timeline{
+    padding-top: 30px;
 }
