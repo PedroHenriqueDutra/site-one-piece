@@ -84,3 +84,14 @@ nav a {
 .card p {
     margin: 0;/*Margem */
 }
+/*Sobre o autor*/
+#autor{
+    max-width: 75%;
+    padding-bottom: 20px;
+    background-color: #000000;
+}
+/*Timeline*/
+.linha_t{
+    border-left: 6px solid green;
+    height: 500px;
+  }
