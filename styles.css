@@ -37,16 +37,9 @@ nav a {
     text-decoration: none;
 }
 /*configuração da página index*/
-#imagemBando{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    text-align: center;
-    position: relative;
-    left: 2em;
-}
+
 #mapaMares{
-    max-width: 40em;
+    max-width: 79.2em;
     position: relative;
     
 }
