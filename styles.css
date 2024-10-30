@@ -1,50 +1,47 @@
-/*configurações do cabeçalho das páginas*/
+/* Aplicando uma imagem de fundo que preenche toda a tela */
 body {
-    font-family: Arial, sans-serif;/**/
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7)),
+    url('https://preview.redd.it/phf7wbld54zc1.jpeg?auto=webp&s=7d8f6fe91e136ae838a0ffe2162d1f7e063bc258'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     margin: 0;
+}
+
+
+/* Estilização do container e da navegação */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilos do menu de navegação */
+nav ul {
+    list-style-type: none;
     padding: 0;
-    background-color: #f4f4f4;
-}
-header{
-    position: inline ;
-    height: 1em;
-    margin: 10px auto;/*Afasta o header docontainer de cartazes*/ 
-    text-align: center;/*Alinhamento do texto*/
-    padding: 20px; /*Distanciamento da borda*/
-    left: 10em;
-    background: #464136;/* Cor de fundo */
-    color: white;
-    
+    display: flex;
+    gap: 20px;
 }
 
+nav ul li a {
+    text-decoration: none;          /* Remove o sublinhado dos links */
+    color: white;                   /* Define a cor do texto como branco */
+    font-weight: bold;              /* Define o peso da fonte como negrito */
+    font-size: 1.5em;               /* Aumenta o tamanho da fonte */
+    padding: 10px 15px;             /* Adiciona um preenchimento ao redor do link */
+    background-color: rgba(0, 0, 0, 0.39);        /* Define a cor de fundo como preta */
+    border-radius: 5px;             /* Arredonda as bordas do fundo */
+    transition: background-color 0.3s;
+}
 
-nav{
-    position: absolute;
-    top: 0px;
-    left: 9em;
-    text-align: center;
-    
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover */
+    border-radius: 5px;
 }
-nav li {
-    display: inline-block;
-    margin: 0 0 0 15px; 
-}
-nav a {
-    
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-/*configuração da página index*/
-
-#mapaMares{
-    max-width: 79.2em;
-    position: relative;
-    
-}
-/*Rodape*/
-
 /* configuração da página personagens*/
 .sonhos{
     display: none;
@@ -117,6 +114,10 @@ img:hover .sonhos{
 #momentos1{
     top: 200px;
 }
+#timeline{
+    padding-top: 30px;
+}
+
 #timeline{
     padding-top: 30px;
 }
