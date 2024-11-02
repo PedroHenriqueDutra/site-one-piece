@@ -61,14 +61,14 @@ nav ul li a:hover {
 .scrollable-content {
     display: flex; /* Usando flexbox para alinhar os cards horizontalmente */
     overflow-x: scroll; /* Permite rolagem horizontal */
-    max-width: 100%; /* Define a largura máxima do container */
+    max-width: 150%; /* Define a largura máxima do container */
+    max-height: 200em;
     padding: 15px;
     background: #efe9da;
     border: 0.5px solid #ccc;
-    margin: 100px 0 0 200px;
     width: 70%;
     height: 60%;
-    gap: 1px;/* afeasta as imagens*/
+    gap: 1px;/* afasta as imagens*/
     background-color: #000000;
     
 }
@@ -82,6 +82,8 @@ nav ul li a:hover {
 
 img:hover + .sonhos{
     display: flex;
+    text-align: center;
+    transition: all 3.5s ease-in-out;/*velocidade de transformação*/
 }
 /*Sobre o autor*/
 #autor{
