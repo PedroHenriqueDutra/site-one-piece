@@ -80,7 +80,7 @@ nav ul li a:hover {
     min-width: 200px; /* Define uma largura mínima para os cards */
 }
 
-img:hover .sonhos{
+img:hover + .sonhos{
     display: flex;
 }
 /*Sobre o autor*/
