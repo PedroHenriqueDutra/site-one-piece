@@ -72,23 +72,57 @@ nav ul li a:hover {
     background-color: #000000;
     
 }
+#Luffy{
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/1/17/Monkey_D._Luffy%27s_Seventh_Wanted_Poster.png);
+}
+#Zorro{
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/5/5d/Roronoa_Zoro%27s_Current_Wanted_Poster.png);
+}
+#Nami{
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/3/3b/Nami%27s_Current_Wanted_Poster.png);
+}
+#Usopp{
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/5/5e/God_Usopp%27s_Wanted_Poster.png);
+}
+#Sanji{
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/c/ca/Sanji%27s_Current_Wanted_Poster.png)
+}
+#Chopper{
+    background-image: url()
+}
+#Robbin{
+    background-image: url()
+}
+#Frank{
+    background-image: url()
+}
+#Brook{
+    background-image: url()
+}
+#Jinbe{
+    background-image: url()
+}
 .card {
-    background: #e9ecef;
+    
     margin-right: 10px; /* Espaço entre os cards */
     padding: 15px;
     border-radius: 5px;
     min-width: 200px; /* Define uma largura mínima para os cards */
- 
- }
-img .cartas{
+    display: grid;
+    grid-template-columns: auto 1fr; /* 2 colunas: a primeira para a imagem e a segunda para o texto */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
 
+      
 }
 
-img:hover + .sonhos{
-    display: flex;
-    text-align: center;
-    
-    
+
+.card:hover + .sonhos{
+    display: flex;/*Torna o texto visível*/
+    text-align: center;/*alinha o texto*/
+       
 }
 /*Sobre o autor*/
 #autor{
