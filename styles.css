@@ -44,51 +44,52 @@ nav ul li a:hover {
 }
 /* configuração da página personagens*/
 .sonhos{
-    display: none;
-}
-.cartas{
-    max-width: 100%;
-    padding-bottom: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-weight:bolder;
+    color: rgb(0, 0, 0);
     
 }
-.cartas:hover{
-    transform: scale(1.1); /*Aumenta a escala da foto 1.1x*/
+.cartas{
+    width: 200px;
 }
 .container {
     width: 80%;/*Largura do card*/
     margin: 0 auto;/*Margem a esquerda com valor 0 e */
 }
 .scrollable-content {
+
     display: flex; /* Usando flexbox para alinhar os cards horizontalmente */
     overflow-x: scroll; /* Permite rolagem horizontal */
+    scroll-behavior: smooth;
     max-width: 150%; /* Define a largura máxima do container */
     max-height: 200em;
     padding: 15px;
-    background: #efe9da;
-    border: 0.5px solid #ccc;
+    border-radius: 10px;
     width: 70%;
     height: 60%;
     gap: 1px;/* afasta as imagens*/
-    background-color: #000000;
+    background-color: #000000a8;
+    scrollbar-color: #c7c5bb88 #000000be; /* thumb | track */
+    scrollbar-width:auto; /* Define a espessura */
+     
+  
     
 }
 .card {
-    background: #e9ecef;
+    background: #c7c5bb88;
     margin-right: 10px; /* Espaço entre os cards */
     padding: 15px;
     border-radius: 5px;
     min-width: 200px; /* Define uma largura mínima para os cards */
- 
+    
  }
-img .cartas{
 
-}
 
-img:hover + .sonhos{
-    display: flex;
+.cartas:hover + .sonhos{
+    max-height: 400px;
     text-align: center;
-    
-    
 }
 /*Sobre o autor*/
 #autor{
