@@ -51,7 +51,7 @@ nav ul li a:hover {
 }
 /*estilo comentários*/
 .coments{
-
+    min-width: 400px;
 }
 /* configuração da página personagens*/
 .sonhos{
