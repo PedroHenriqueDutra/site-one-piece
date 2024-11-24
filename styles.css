@@ -46,12 +46,12 @@ nav ul li a:hover {
 .rodape {
     text-align: left;
     position: relative;
-    left: 10px;
+    left: 0px;
     background-color: green;
 }
 /*estilo comentários*/
 .coments{
-    
+
 }
 /* configuração da página personagens*/
 .sonhos{
