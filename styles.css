@@ -4,7 +4,7 @@ body {
     url('https://preview.redd.it/phf7wbld54zc1.jpeg?auto=webp&s=7d8f6fe91e136ae838a0ffe2162d1f7e063bc258'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     height: 100vh;
     margin: 0;
 }
@@ -42,6 +42,14 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover */
     border-radius: 5px;
 }
+/*Estilo do rodapé */
+.rodape {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    background-color: green;
+}
+
 /* configuração da página personagens*/
 .sonhos{
     max-height: 0;
