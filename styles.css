@@ -140,3 +140,8 @@ nav ul li a:hover {
 #timeline{
     padding-top: 30px;
 }
+
+/*Sobre nos*/
+.personagem{
+    max-width: 200px;
+}
