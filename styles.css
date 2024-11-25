@@ -18,7 +18,6 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-
 /* Estilos do menu de navegação */
 nav ul {
     list-style-type: none;
@@ -104,44 +103,43 @@ nav ul li a:hover {
 }
 /*Sobre o autor*/
 #autor{
-    max-width: 75%;
-    padding-bottom: 20px;
-    background-color: #000000;
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 /*Timeline*/
-.linha_t{
-    border-left: 6px solid rgb(14, 13, 13);
-    height: 5000px;
-    display: flex;
-    position: relative;
-    left: 50%;
-    max-width: 1px;
-    background-color: green;
-    top: 200px;
-}
-.momentos{
-    background-color: purple;
-    border: 6px solid #464136;
-    display: flex;
-    min-width: 10px;
-    min-height: 10px;
-    position: absolute;/*Faz desconsiderar outros espaços de itens*/
-    left: 49em;
-    border-radius: 50%;/*torna a borda circular*/
-    max-width: 3%;
-}
-#momentos1{
-    top: 200px;
-}
-#timeline{
-    padding-top: 30px;
-}
-
-#timeline{
-    padding-top: 30px;
-}
-
-/*Sobre nos*/
-.personagem{
-    max-width: 200px;
-}
+    .timeline-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 600px; /* Tamanho inicial */
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .timeline-container:hover {
+        max-width: 3000px; /* Expande o contêiner no hover */
+    }
+    
+    .timeline {
+        display: block;
+        width: 50%;
+        transition: transform 0.5s ease-in-out;
+    }
+    .timeline-text {
+        visibility: hidden; /* Texto inicialmente oculto */
+        opacity: 0;
+        margin-left: 20px; /* Espaço entre a imagem e o texto */
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        background-color: #fd0000a4;
+        transition: visibility 0s, opacity 0.5s ease-in-out;
+    }
+    .timeline-container:hover .timeline-text {
+        visibility: visible; /* Torna o texto visível */
+        opacity: 1;
+    }
